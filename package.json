@@ -23,7 +23,14 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "yarn run lint:code && yarn run lint:styles",
+    "lint:code": "eslint --ext ts,tsx src",
+    "lint:styles": "stylelint '**/*.scss'",
+    "lint-fix": "eslint --fix --ext ts,tsx src",
+    "lint:styles-fix": "yarn run lint:styles -- --fix",
+    "prettier": "prettier 'src/**/*.{ts,js,tsx,scss}'",
+    "prettier-fix": "yarn run prettier -- --write"
   },
   "eslintConfig": {
     "extends": [
@@ -44,6 +51,28 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "gh-pages": "^3.2.3",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.1",
+    "prettier": "^2.3.2",
+    "prettier-eslint": "^13.0.0",
+    "typescript-eslint": "^0.0.1-alpha.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.(ts|tsx)": [
+      "yarn run lint-fix",
+      "yarn run prettier-fix",
+      "git add"
+    ]
   }
 }
