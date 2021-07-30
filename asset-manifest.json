@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/flip-cards-game/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/flip-cards-game/static/js/main.7e289426.chunk.js",
+    "main.js.map": "/flip-cards-game/static/js/main.7e289426.chunk.js.map",
+    "runtime-main.js": "/flip-cards-game/static/js/runtime-main.84161321.js",
+    "runtime-main.js.map": "/flip-cards-game/static/js/runtime-main.84161321.js.map",
+    "static/js/2.033403db.chunk.js": "/flip-cards-game/static/js/2.033403db.chunk.js",
+    "static/js/2.033403db.chunk.js.map": "/flip-cards-game/static/js/2.033403db.chunk.js.map",
+    "static/js/3.747fb75a.chunk.js": "/flip-cards-game/static/js/3.747fb75a.chunk.js",
+    "static/js/3.747fb75a.chunk.js.map": "/flip-cards-game/static/js/3.747fb75a.chunk.js.map",
+    "index.html": "/flip-cards-game/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/flip-cards-game/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.033403db.chunk.js.LICENSE.txt": "/flip-cards-game/static/js/2.033403db.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/flip-cards-game/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.84161321.js",
+    "static/js/2.033403db.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.7e289426.chunk.js"
+  ]
+}
