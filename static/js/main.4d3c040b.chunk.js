@@ -1,2 +1,0 @@
-(this["webpackJsonpflip-cards-game"]=this["webpackJsonpflip-cards-game"]||[]).push([[0],{10:function(e,n,t){"use strict";t.r(n);var c=t(0),i=t.n(c),o=t(3),r=t.n(o),s=function(e){e&&e instanceof Function&&t.e(3).then(t.bind(null,11)).then((function(n){var t=n.getCLS,c=n.getFID,i=n.getFCP,o=n.getLCP,r=n.getTTFB;t(e),c(e),i(e),o(e),r(e)}))},a=(t(8),t(2));r.a.render(Object(a.jsx)(i.a.StrictMode,{children:Object(a.jsx)("div",{children:"DDDDDDDD"})}),document.getElementById("root")),s()},8:function(e,n,t){}},[[10,1,2]]]);
-//# sourceMappingURL=main.4d3c040b.chunk.js.map
