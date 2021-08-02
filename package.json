@@ -2,7 +2,7 @@
   "name": "flip-cards-game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://misyukevich-itransition.github.io/",
+  "homepage": "https://misyukevich-itransition.github.io/flip-cards-game",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -26,11 +26,9 @@
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "yarn run lint:code && yarn run lint:styles",
+    "lint": "yarn run lint:code",
     "lint:code": "eslint --ext ts,tsx src",
-    "lint:styles": "stylelint '**/*.scss'",
     "lint-fix": "eslint --fix --ext ts,tsx src",
-    "lint:styles-fix": "yarn run lint:styles -- --fix",
     "prettier": "prettier 'src/**/*.{ts,js,tsx,scss}'",
     "prettier-fix": "yarn run prettier -- --write"
   },

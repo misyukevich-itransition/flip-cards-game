@@ -1,5 +1,5 @@
 export enum RoutePath {
-  Start = '/',
+  Home = '/',
   Game = '/game',
   Score = '/score',
 }

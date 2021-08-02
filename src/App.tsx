@@ -1,20 +1,20 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import './styles/App.scss';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import { RoutePath } from './enums/RoutePath';
-import { Start } from './components/start/Start';
-import { Game } from './components/game/Game';
-import { Score } from './components/score/Score';
+import './styles/App.scss';
+import Home from './pages/home/Home';
+import Game from './pages/game/Game';
+import Score from './pages/score/Score';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
-        <Route path={RoutePath.Start} exact component={Start} />
+        <Route path={RoutePath.Home} exact component={Home} />
         <Route path={RoutePath.Game} component={Game} />
         <Route path={RoutePath.Score} component={Score} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
