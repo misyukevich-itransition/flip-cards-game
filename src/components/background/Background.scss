@@ -1,12 +1,12 @@
 @keyframes move_wave {
   0% {
-    transform: translateX(0) translateZ(0) scaleY(1)
+    transform: translateX(0) translateZ(0) scaleY(1);
   }
   50% {
-    transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
   }
   100% {
-    transform: translateX(-50%) translateZ(0) scaleY(1)
+    transform: translateX(-50%) translateZ(0) scaleY(1);
   }
 }
 
@@ -57,12 +57,10 @@
       background-image: url('https://front-end-noobs.com/jecko/img/wave-top.png');
     }
 
-
     &--middle {
       background-size: 50% 120px;
       background-image: url('https://front-end-noobs.com/jecko/img/wave-mid.png');
     }
-
 
     &--bottom {
       background-size: 50% 100px;

@@ -1,0 +1,63 @@
+@import '../../styles/variables.scss';
+
+.Form {
+  $root: &;
+
+  position: relative;
+  padding: $gutter-md 0 0;
+  margin: $gutter-ml;
+
+  &__field {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid $color-gray;
+    outline: 0;
+    font-size: $font-size-lg;
+    color: $color-white;
+    padding: $gutter-sm 0;
+    background: transparent;
+    transition: border-color 0.2s;
+
+    &::placeholder {
+      color: transparent;
+    }
+
+    &:placeholder-shown ~ #{$root}__label {
+      font-size: $font-size-lg;
+      cursor: text;
+      top: 20px;
+    }
+
+    &:focus {
+      padding-bottom: $gutter-xs;
+      font-weight: 700;
+      border-width: 3px;
+      border-image: 1
+        linear-gradient(to right, $color-emerald, $color-light-green);
+
+      ~ #{$root}__label {
+        position: absolute;
+        transform: translate(0, -100%);
+        display: block;
+        transition: 0.2s;
+        font-size: $font-size-ms;
+        color: $color-emerald;
+        font-weight: 700;
+      }
+    }
+
+    &:required,
+    &:invalid {
+      box-shadow: none;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: $color-gray;
+  }
+}

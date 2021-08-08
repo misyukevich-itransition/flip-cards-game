@@ -6,10 +6,7 @@ const Score = () => {
   return (
     <PrimaryLayout>
       <div className="Score">
-        <Button
-          name="Score"
-          onButtonClick={() => console.log('SCORE')}
-        />
+        <Button name="Score" onButtonClick={() => console.log('SCORE')} />
       </div>
     </PrimaryLayout>
   );

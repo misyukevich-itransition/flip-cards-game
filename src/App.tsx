@@ -1,7 +1,6 @@
 import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import { RoutePath } from './enums/RoutePath';
-import './styles/App.scss';
 import Home from './pages/home/Home';
 import Game from './pages/game/Game';
 import Score from './pages/score/Score';

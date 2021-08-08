@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project deployed at [Github Pages](https://misyukevich-itransition.github.io/).
+This project deployed at [Github Pages](https://misyukevich-itransition.github.io/flip-cards-game).
 
 ## Available Scripts
 

@@ -1,3 +1,23 @@
+@import '../../styles/variables.scss';
+
 .Game {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  color: $color-white;
   z-index: 1;
+
+  &__sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
