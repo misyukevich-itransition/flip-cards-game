@@ -1,5 +1,6 @@
 import './Input.scss';
 import React, { ChangeEvent } from 'react';
+import { useClassName } from '../../hooks/useClassName/useClassName';
 
 interface IInputProps {
   userName: string;
@@ -7,18 +8,21 @@ interface IInputProps {
 }
 
 const Input: React.FC<IInputProps> = ({ userName, onInputChange }) => {
+  const cn = useClassName('Form');
+
   return (
-    <div className="Form">
+    <div className={cn()}>
       <input
         type="input"
-        className="Form__field"
+        className={cn('field')}
         placeholder="Name"
         autoComplete="off"
         required
         value={userName}
         onChange={onInputChange}
       />
-      <label htmlFor="name" className="Form__label">
+
+      <label htmlFor="name" className={cn('label')}>
         Name
       </label>
     </div>

@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.Card {
+  width: $card-width;
+  height: $card-height;
+  background-color: $color-light-yellow;
+  border-radius: $border-radius-lg;
+  margin: $gutter-xs;
+
+  &:hover {
+    background-color: $color-light-brown;
+    cursor: pointer;
+  }
+}

@@ -1,23 +1,31 @@
 @import '../../styles/variables.scss';
 
-.Game {
+%space-between {
   display: flex;
   justify-content: space-between;
+}
+
+.Game {
+  @extend %space-between;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  color: $color-white;
   z-index: 1;
 
-  &__sidebar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  &__info {
+    @extend %space-between;
+    padding: $gutter-sm $gutter-ml;
+  }
+
+  &__controls {
+    @extend %space-between;
+    padding: 0 $gutter-md $gutter-ms;
   }
 
   &__cards {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    //Card width + left & right margin, 6 cards in the row
+    width: ($card-width + $gutter-xs * 2) * 6;
+    justify-self: center;
+    align-self: center;
   }
 }
